@@ -1,0 +1,17 @@
+{
+  "name": "static",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "稻草人 <462001808@qq.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Kavan-whh/Template",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
