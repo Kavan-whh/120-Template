@@ -19,7 +19,9 @@ let a={
 let b={
   d:2
 }
-Object.assign(a,b)
+let temp=Object.assign(a,b)
+console.log(temp);
+
 o.create()
 class Person {
     constructor(name) {
