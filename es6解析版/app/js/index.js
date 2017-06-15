@@ -13,6 +13,13 @@ var o={
     console.log('fun');
   }
 }
+let a={
+  c:1
+}
+let b={
+  d:2
+}
+Object.assign(a,b)
 o.create()
 class Person {
     constructor(name) {
@@ -23,7 +30,6 @@ class Person {
     }
 }
 
-console.log(new Person("cindy").greet());
 
 var asyncFun = async function() {
     var set = setTimeout(function() {

@@ -71,26 +71,12 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
-
 // var obj=document.querySelectorAll("ul li");
 // console.log(obj.length);
 // obj.forEach(item => {
 //     console.log(item);
 //     // console.log('2');
 // })
-
-var arr = [1, 2, 3];
-console.log(arr.includes(1));
-[1, 2, 3].map(function (n) {
-  return n + 1;
-});
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
 
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -99,12 +85,23 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var index = __webpack_require__(0);
+var arr = [1, 2, 3];
+console.log(arr.includes(1));
+[1, 2, 3].map(function (n) {
+    return n + 1;
+});
 var o = {
     create: function create() {
         console.log('fun');
     }
 };
+var a = {
+    c: 1
+};
+var b = {
+    d: 2
+};
+Object.assign(a, b);
 o.create();
 
 var Person = function () {
@@ -123,8 +120,6 @@ var Person = function () {
 
     return Person;
 }();
-
-console.log(new Person("cindy").greet());
 
 var asyncFun = function () {
     var _ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee() {
@@ -169,6 +164,15 @@ var asyncFun = function () {
     };
 }();
 asyncFun();
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var index = __webpack_require__(0);
 
 /***/ })
 /******/ ]);
