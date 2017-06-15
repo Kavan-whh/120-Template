@@ -1,4 +1,4 @@
-// var index = require('./index.js');
+var index = require('./index.js');
 var o={
   create(){
     console.log('fun');
@@ -13,7 +13,6 @@ class Person {
         return this.name + ' says hello. ';
     }
 }
-
 
 console.log(new Person("cindy").greet());
 

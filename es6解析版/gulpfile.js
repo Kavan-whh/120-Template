@@ -13,7 +13,7 @@ gulp.task('serve',function(){
 
   gulp.watch('public/scss/*.scss', ['sass']);
   gulp.watch('public/css/*.css').on('change',reload);
-  gulp.watch('public/js/*.js').on('change',reload);
+  gulp.watch('app/js/*.js').on('change',reload);
   gulp.watch('public/*.html').on('change',reload);
 
 });
