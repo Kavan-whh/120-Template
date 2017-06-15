@@ -1,0 +1,459 @@
+{
+  "group": {
+    "e": 0,
+    "m": "操作成功",
+    "d": {
+      "department": {
+        "id": 5,
+        "name": "组织架构",
+        "schema": "department",
+        "role": [{
+          "id": 119,
+          "gid": 5,
+          "pid": 0,
+          "name": "长江云平台",
+          "children": [{
+            "id": 120,
+            "gid": 5,
+            "pid": 119,
+            "name": "高校客户"
+          }, {
+            "id": 151,
+            "gid": 5,
+            "pid": 119,
+            "name": "技术中心"
+          }, {
+            "id": 168,
+            "gid": 5,
+            "pid": 119,
+            "name": "长江云平台",
+            "children": [{
+              "id": 169,
+              "gid": 5,
+              "pid": 168,
+              "name": "高校客户"
+            }]
+          }]
+        }]
+      },
+      "tags": {
+        "id": 10,
+        "name": "标签",
+        "schema": "tags",
+        "role": [{
+          "id": 152,
+          "gid": 10,
+          "pid": 0,
+          "name": "标签",
+          "children": [{
+            "id": 162,
+            "gid": 10,
+            "pid": 152,
+            "name": "2017",
+            "children": [{
+              "id": 163,
+              "gid": 10,
+              "pid": 162,
+              "name": "计算机与信息技术学院(演示)",
+              "children": [{
+                "id": 164,
+                "gid": 10,
+                "pid": 163,
+                "name": "软件工程(演示)",
+                "children": [{
+                  "id": 165,
+                  "gid": 10,
+                  "pid": 164,
+                  "name": "软件工程1701(演示)"
+                }]
+              }]
+            }]
+          }]
+        }]
+      }
+    }
+  },
+  "search-api": {
+    "e": 0,
+    "m": "操作成功",
+    "d": {
+      "department": [{
+        "id": 120,
+        "gid": 5,
+        "pid": 119,
+        "name": "高校客户"
+      }],
+      "users": [{
+        "uid": 769,
+        "realname": "测试账号25",
+        "nickname": "测试账号25",
+        "sex": 1,
+        "avatar": ""
+      }]
+    }
+  },
+  "lists": {
+    "e": 0,
+    "m": "操作成功",
+    "d": {
+      "lists": [{
+        "uid": 756,
+        "email": "",
+        "mobile": "18300100004",
+        "password": "",
+        "salt": "",
+        "nickname": "测试账号12",
+        "realname": "测试账号12",
+        "sex": 1,
+        "status": 0,
+        "type": "real",
+        "avatar": "http://fang.uc.com/campus/images/timg.png",
+        "roles": ["165", "120"],
+        "source": "",
+        "last_ip": "",
+        "last_time": 0,
+        "groups": ["10", "5"],
+        "tags": {
+          "id": 269,
+          "uid": 756,
+          "roleid": ["165"],
+          "active": 1,
+          "rolename": {
+            "165": "软件工程1701(演示)"
+          }
+        },
+        "department": {
+          "id": 453,
+          "uid": 756,
+          "roleid": ["120"],
+          "active": 1,
+          "number": "ceshizhanghao12",
+          "position": "学生",
+          "identity": "本科生",
+          "rolename": {
+            "120": "高校客户"
+          }
+        }
+      }],
+      "count": 1,
+      "pages": 1,
+      "curr": 1
+    }
+  },
+  "corp": [1, 2],
+  "api-contacts": {
+    "e": 0,
+    "m": "操作成功",
+    "d": {
+      "department": {
+        "name": "组织架构",
+        "role": {
+          "1": {
+            "id": 1,
+            "name": "瑞雷森",
+            "parentid": 0,
+            "order": 200,
+            "children": [{
+              "id": 2,
+              "name": "研发中心",
+              "parentid": 1,
+              "order": 200
+            }, {
+              "id": 3,
+              "name": "高校客户",
+              "parentid": 1,
+              "order": 400,
+              "children": [{
+                "id": 25,
+                "name": "测试部门",
+                "parentid": 3,
+                "order": 200
+              }]
+            }, {
+              "id": 18,
+              "name": "测试部门",
+              "parentid": 1,
+              "order": 1000,
+              "children": [{
+                "id": 19,
+                "name": "测试子部门",
+                "parentid": 18,
+                "order": 200
+              }]
+            }, {
+              "id": 29,
+              "name": "测试部门1",
+              "parentid": 1,
+              "order": 1200
+            }]
+          }
+        }
+      },
+      "tags": {
+        "name": "标签",
+        "role": [{
+          "tagid": 1,
+          "tagname": "研发中心"
+        }, {
+          "tagid": 2,
+          "tagname": "研究生"
+        }, {
+          "tagid": 3,
+          "tagname": "大学生"
+        }, {
+          "tagid": 4,
+          "tagname": "高中生"
+        }, {
+          "tagid": 5,
+          "tagname": "大学生测试"
+        }, {
+          "tagid": 6,
+          "tagname": "测试标签001"
+        }, {
+          "tagid": 7,
+          "tagname": "测试131"
+        }, {
+          "tagid": 9,
+          "tagname": "han"
+        }, {
+          "tagid": 10,
+          "tagname": "zhao"
+        }, {
+          "tagid": 11,
+          "tagname": "千百度"
+        }, {
+          "tagid": 12,
+          "tagname": "亭房道"
+        }, {
+          "tagid": 14,
+          "tagname": "你若成风"
+        }, {
+          "tagid": 15,
+          "tagname": "sssss"
+        }, {
+          "tagid": 16,
+          "tagname": "测试标签刘双增"
+        }, {
+          "tagid": 17,
+          "tagname": "测试标签m"
+        }]
+      }
+    }
+  },
+  "user-list": {
+    "e": 0,
+    "m": "操作成功",
+    "d": {
+      "lists": [{
+        "uid": 1154,
+        "userid": "yangluchao",
+        "name": "杨路超",
+        "department": ["2", "3", "18"],
+        "position": "",
+        "mobile": "17600205680",
+        "gender": 1,
+        "email": "",
+        "weixinid": "yluchao001",
+        "avatar": "",
+        "status": 4,
+        "extattr": "",
+        "subscribe_time": 0,
+        "unsubscribe_time": 0
+      }],
+      "count": 1,
+      "pages": 1,
+      "curr": 1
+    }
+  },
+  "csearch-api": {
+    "e": 0,
+    "m": "操作成功",
+    "d": {
+      "department": [{
+        "id": 18,
+        "name": "测试部门",
+        "parentid": 1,
+        "order": 1000
+      }, {
+        "id": 29,
+        "name": "测试部门1",
+        "parentid": 1,
+        "order": 1200
+      }, {
+        "id": 25,
+        "name": "测试部门",
+        "parentid": 3,
+        "order": 200
+      }, {
+        "id": 19,
+        "name": "测试子部门",
+        "parentid": 18,
+        "order": 200
+      }],
+      "tags": [{
+        "tagid": 5,
+        "tagname": "大学生测试"
+      }, {
+        "tagid": 6,
+        "tagname": "测试标签001"
+      }, {
+        "tagid": 7,
+        "tagname": "测试131"
+      }, {
+        "tagid": 16,
+        "tagname": "测试标签刘双增"
+      }, {
+        "tagid": 17,
+        "tagname": "测试标签m"
+      }],
+      "users": [{
+        "uid": 1134,
+        "userid": "ceshizhanghao12",
+        "name": "测试账号12",
+        "department": ["18"],
+        "position": "",
+        "mobile": "18300100004",
+        "gender": 1,
+        "email": "",
+        "weixinid": "ceshizhanghao12",
+        "avatar": "",
+        "status": 4,
+        "extattr": "",
+        "subscribe_time": 0,
+        "unsubscribe_time": 0
+      }, {
+        "uid": 1135,
+        "userid": "ceshizhanghao13",
+        "name": "测试账号13",
+        "department": ["18"],
+        "position": "",
+        "mobile": "18300100005",
+        "gender": 1,
+        "email": "",
+        "weixinid": "ceshizhanghao13",
+        "avatar": "",
+        "status": 4,
+        "extattr": "",
+        "subscribe_time": 0,
+        "unsubscribe_time": 0
+      }, {
+        "uid": 1136,
+        "userid": "ceshizhanghao14",
+        "name": "测试账号14",
+        "department": ["18"],
+        "position": "",
+        "mobile": "18300100006",
+        "gender": 1,
+        "email": "",
+        "weixinid": "ceshizhanghao14",
+        "avatar": "",
+        "status": 4,
+        "extattr": "",
+        "subscribe_time": 0,
+        "unsubscribe_time": 0
+      }, {
+        "uid": 1137,
+        "userid": "ceshizhanghao15",
+        "name": "测试账号15",
+        "department": ["18"],
+        "position": "",
+        "mobile": "18300100007",
+        "gender": 1,
+        "email": "",
+        "weixinid": "ceshizhanghao15",
+        "avatar": "",
+        "status": 4,
+        "extattr": "",
+        "subscribe_time": 0,
+        "unsubscribe_time": 0
+      }, {
+        "uid": 1138,
+        "userid": "ceshizhanghao16",
+        "name": "测试账号16",
+        "department": ["18"],
+        "position": "",
+        "mobile": "18300100008",
+        "gender": 2,
+        "email": "",
+        "weixinid": "ceshizhanghao16",
+        "avatar": "",
+        "status": 4,
+        "extattr": "",
+        "subscribe_time": 0,
+        "unsubscribe_time": 0
+      }]
+    }
+  },
+  "get-contact-auth": {
+    "e": 0,
+    "m": "操作成功",
+    "d": {
+      "auth": {
+        "yunschool": {
+          "5": {
+            "uid": 5,
+            "contact": "yunschool",
+            "gid": 5,
+            "readable": [120, 151, 210, 211, 119],
+            "manageable": [120, 211, 119],
+            "names": [],
+            "manageids": [120, 211, 119],
+            "allowids": [119, 120, 151, 210, 211],
+            "allids": [119, 120, 151, 210, 211]
+          },
+          "11": {
+            "uid": 0,
+            "contact": "",
+            "gid": "",
+            "readable": [],
+            "manageable": [],
+            "names": [],
+            "manageids": [],
+            "allowids": [],
+            "allids": []
+          }
+        },
+        "corp": {
+          "1": {
+            "uid": 5,
+            "contact": "corp",
+            "gid": 1,
+            "readable": [10, 11, 19],
+            "manageable": [19],
+            "names": {
+              "19": ["瑞雷森", "测试部门", "测试子部门"]
+            },
+            "manageids": [19],
+            "allowids": [10, 11, 19],
+            "allids": [1, 10, 11, 18, 19]
+          },
+          "2": {
+            "uid": 5,
+            "contact": "corp",
+            "gid": 2,
+            "readable": [17, 5, 2, 3, 4, 10],
+            "manageable": [17, 5, 2, 3, 4],
+            "names": {
+              "17": "测试标签m",
+              "5": "大学生测试",
+              "2": "研究生",
+              "3": "大学生",
+              "4": "高中生",
+              "10": "zhao"
+            },
+            "manageids": [17, 5, 2, 3, 4],
+            "allowids": [17, 5, 2, 3, 4, 10],
+            "allids": [17, 5, 2, 3, 4, 10]
+          }
+        }
+      },
+      "hasPermit": true
+    }
+  }
+
+
+
+
+
+
+}

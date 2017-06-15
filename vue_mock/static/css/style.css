@@ -1,0 +1,21 @@
+.icon_labeldele{
+  background: url(../img/icon_dele.png) no-repeat center center;
+  background-size: 100%;
+}
+.jstree-icon{
+  background: url('../img/右三角.png')no-repeat center center;
+  background-size: 100%;
+}
+.mod-icon{
+  background: url('../img/school-file-active.svg') no-repeat center center;
+  background-size: 100%;
+}
+.mod-icon-file{
+  background: url('../img/file.png') no-repeat center center;
+    background-size: 100%;
+
+}
+.input{
+  background: url('../img/checkbox.png')no-repeat center center;
+    background-size: 100%;
+}

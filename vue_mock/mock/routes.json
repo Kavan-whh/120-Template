@@ -1,0 +1,5 @@
+{
+  "/api/": "/",
+  "/corp/:resource": "/:resource",
+  "/yunschool/:resource":"/:resource"
+}

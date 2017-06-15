@@ -1,0 +1,37 @@
+.jstree-icon,.mod-icon{
+  display: inline-block;
+width: 14px;
+height: 14px;
+}
+.jstree-no{
+  background: none
+}
+.jstree-icon-sq{
+  transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+}
+.departName{
+  color: #02C69E;
+}
+.normal{
+  color: black;
+}
+
+li{
+  width: 100%;
+  position: relative;
+  &>div{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .input{
+    position: absolute;
+    right: 5%;
+    top:0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+  }
+
+}

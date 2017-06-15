@@ -1,0 +1,55 @@
+@mixin dl {
+  float: left;
+  text-align: center;
+  width: 22%;
+  cursor: pointer;
+}
+@mixin dd {
+  position: absolute;
+  width: 97%;
+  text-align: left;
+  left:1.5%;
+
+
+}
+@mixin dt {
+  display: inline-block;
+  padding: 8px 5px;
+}
+.wrap{
+  position: relative;
+  .active{
+    background-color: #fff;
+    dd{
+      background-color: #fff;
+    }
+  }
+  .department{
+    @include dl;
+
+    dt{
+      @include dt;
+    }
+    dd{
+      @include dd;
+    }
+  }
+  .member{
+    @include dl;
+    dt{
+      @include dt;
+    }
+    dd{
+      @include dd;
+      .role__member{
+        width: 50%;
+        float: left;
+        border-right: 1px solid #ccc;
+      }
+      .role__users{
+        float: left;
+        display: block;
+      }
+    }
+  }
+}

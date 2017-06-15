@@ -1,0 +1,44 @@
+$yunschool-color: #02C69E;
+$corp-color: #2991E8;
+
+.pop{
+  width: 500px;
+  height: 530px;
+
+  background-color: white;
+  .pop__bd{
+    padding: 3%;
+    display: flex;
+    height: 80%;
+    .pop__tab{
+      flex:2;
+      text-align: center;
+      height: 100%;
+      font-size: 13px;
+      line-height: 40px;
+      & div{
+        cursor: pointer;
+      }
+      & div:nth-child(1){
+          color: $yunschool-color
+      }
+      & div:nth-child(2){
+          color: $corp-color
+      }
+      .pop__tab-light{
+        background-color: #eee;
+    font-size: 18px;
+      }
+      .pop__tab-light.yunschool{
+        color:$yunschool-color
+      }
+      .pop__tab-light.corp{
+        color:$corp-color
+      }
+    }
+    .pop__content{
+      flex:7
+    }
+  }
+
+}

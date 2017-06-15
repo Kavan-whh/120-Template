@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>baizuo</title>
+  <link rel="stylesheet" href="./static/css/style.css">
+
+  <!-- S公用 -->
+   <!-- <link href='http://ucenter.datamorality.com/thirdparty/googlefonts/OpenSans.css' rel='stylesheet' type='text/css'> -->
+<link href="http://ucenter.datamorality.com/thirdparty/nifty/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://ucenter.datamorality.com/thirdparty/nifty/css/nifty.min.css" rel="stylesheet">
+<link href="http://ucenter.datamorality.com/thirdparty/nifty/css/demo/nifty-demo-icons.min.css" rel="stylesheet">
+<link href="http://ucenter.datamorality.com/thirdparty/nifty/css/demo/nifty-demo.min.css" rel="stylesheet">
+<link href="http://ucenter.datamorality.com/thirdparty/nifty/plugins/ionicons/css/ionicons.min.css" rel="stylesheet">
+<link href="http://ucenter.datamorality.com/thirdparty/nifty/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="http://ucenter.datamorality.com/thirdparty/nifty/plugins/morris-js/morris.min.css" rel="stylesheet">
+<link href="http://ucenter.datamorality.com/thirdparty/nifty/plugins/magic-check/css/magic-check.min.css" rel="stylesheet">
+<link href="http://ucenter.datamorality.com/thirdparty/nifty/plugins/pace/pace.min.css" rel="stylesheet">
+<link href="http://ucenter.datamorality.com/backend/css/common.css" rel="stylesheet">
+<link href="http://ucenter.datamorality.com/backend/css/header.css" rel="stylesheet">
+<link href="http://ucenter.datamorality.com/backend/css/nifty.css" rel="stylesheet">
+<link href="http://ucenter.datamorality.com/thirdparty/ns-box/css/ns-style.css" rel="stylesheet">
+
+
+<script src="http://ucenter.datamorality.com/thirdparty/nifty/plugins/pace/pace.min.js"></script>
+<script src="http://ucenter.datamorality.com/thirdparty/nifty/js/jquery-2.2.4.min.js"></script>
+<script src="http://ucenter.datamorality.com/thirdparty/nifty/js/bootstrap.min.js"></script>
+<script src="http://ucenter.datamorality.com/thirdparty/nifty/js/nifty.min.js"></script>
+<script src="http://ucenter.datamorality.com/thirdparty/nifty/plugins/sparkline/jquery.sparkline.min.js"></script>
+<script src="http://ucenter.datamorality.com/thirdparty/nifty/plugins/bootbox/bootbox.min.js"></script>
+<script src="http://ucenter.datamorality.com/thirdparty/ns-box/js/box.js"></script>
+  <!-- E公用 -->
+
+
+</head>
+
+<body>
+  <div id="pops">
+  </div>
+  <!-- built files will be auto injected -->
+  <script src="./static/js/jquery.js" charset="utf-8"></script>
+  <script src="./static/js/pops.conf.js" charset="utf-8"></script>
+
+  <script type="text/javascript">
+    function createPop(cb) {
+      let opt = {
+        data: {
+          // 入口数据
+          html: false, //true / false,
+          rules: {
+            roleid: [1, 2], // 云校通讯录部门id
+            uid: [], // 云校通讯录成员id
+            corp_uid: [], // 企业号成员id
+            corp_tag: [], // 企业号标签id
+            corp_roleid: [], // 企业号组织架构id
+          },
+          // auth: {
+          //   yunschool: {},
+          //   corp: {}
+          // },
+          // hasPermit: true,//true / false,
+
+          // 样式
+          contact: [], // [] 都显示， ['yunschool'] 只显示云校  ['corp'] 只显示企业号
+          group: {
+            yunschool: {
+              role: [], // 上面一层
+              user: [] // 下面一层
+            },
+            corp: {
+              role: [], // 组织架构0 标签1 出现就显示，为空全显示
+              user: [], // 只针对组织架构起作用
+            }
+          },
+        },
+        methods: {
+          cancel(obj) {
+            console.log(obj)
+          },
+          ok(obj){},//保存
+
+        }
+      }
+      cb(opt);
+    }
+  </script>
+</body>
+
+</html>
