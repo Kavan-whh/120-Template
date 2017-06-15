@@ -95,6 +95,8 @@ console.log(arr.includes(1));
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var index = __webpack_require__(0);
@@ -124,16 +126,48 @@ var Person = function () {
 
 console.log(new Person("cindy").greet());
 
-var asyncFun = async function asyncFun() {
-    var set = setTimeout(function () {
-        console.log(3);
-    }, 1000);
-    var f1 = await set;
-    console.log(1);
-    var f2 = await set;
-    console.log(1);
-    var f2 = await set;
-};
+var asyncFun = function () {
+    var _ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee() {
+        var set, f1, f2;
+        return regeneratorRuntime.wrap(function _callee$(_context) {
+            while (1) {
+                switch (_context.prev = _context.next) {
+                    case 0:
+                        set = setTimeout(function () {
+                            console.log(3);
+                        }, 1000);
+                        _context.next = 3;
+                        return set;
+
+                    case 3:
+                        f1 = _context.sent;
+
+                        console.log(1);
+                        _context.next = 7;
+                        return set;
+
+                    case 7:
+                        f2 = _context.sent;
+
+                        console.log(1);
+                        _context.next = 11;
+                        return set;
+
+                    case 11:
+                        f2 = _context.sent;
+
+                    case 12:
+                    case 'end':
+                        return _context.stop();
+                }
+            }
+        }, _callee, this);
+    }));
+
+    return function asyncFun() {
+        return _ref.apply(this, arguments);
+    };
+}();
 asyncFun();
 
 /***/ })
