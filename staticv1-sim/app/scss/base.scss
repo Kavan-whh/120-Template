@@ -61,3 +61,31 @@ body{
 .show{
     display: block;
 }
+
+
+// 自己封装
+// 使用指南
+
+
+// 背景图scss
+// @mixin background($name,$list) {
+//   @each $img in $list{
+//     .#{$name}__#{$img}{
+//       background: url('img/#{$img}')
+//     }
+//   }
+// }
+// @include background(span,03 04);
+
+
+// obj二维设置图片，或同类。
+// $state:(success:#CCCCCC ,fail: #FF973A);//数据
+// @mixin circle_state($obj) {
+//   @each $state,$color in $obj{
+//     .circle__#{$state}{
+//       background-color: $color
+//
+//     }
+//   }
+// }
+// @include circle_state($state);
