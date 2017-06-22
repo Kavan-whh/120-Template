@@ -11,7 +11,7 @@ gulp.task('serve',function(){
     server:'./public'
   });
 
-  gulp.watch('public/scss/*.scss', ['sass']);
+  gulp.watch('app/scss/*.scss', ['sass']);
   gulp.watch('public/css/*.css').on('change',reload);
   gulp.watch('app/js/*.js').on('change',reload);
   gulp.watch('public/*.html').on('change',reload);
@@ -19,7 +19,7 @@ gulp.task('serve',function(){
 });
 
 gulp.task('sass',function(){
-  return gulp.src('public/scss/*.scss')
+  return gulp.src('app/scss/*.scss')
   .pipe(sass().on('error',sass.logError))
   .pipe(gulp.dest('./public/css'));
 })
