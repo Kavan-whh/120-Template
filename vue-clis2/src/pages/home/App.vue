@@ -7,7 +7,15 @@
 
 <script>
 export default {
-  name: 'app'
+  name: 'app',
+   mounted() {
+        this.$http.get('/api/posts', {
+          params:{id:2}
+        })
+        .then(
+            m=>console.log(m.data)
+        );
+    }
 }
 </script>
 
