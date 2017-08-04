@@ -8,7 +8,8 @@ var sass=require('gulp-sass');
 // 静态服务器 + 监听 css/html/js文件
 gulp.task('serve',function(){
   browserSync.init({
-    server:'./app'
+    // server:'./app'
+    proxy: "http://localhost:3001"
   });
 
   gulp.watch('app/scss/*.scss', ['sass']);
