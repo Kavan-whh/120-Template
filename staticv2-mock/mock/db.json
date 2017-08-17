@@ -1,10 +1,9 @@
 {
-  "cs":{
-    "id":3,
-    "whh":"whh"
-  },
-  "posts": [
-    {
+  "cs": [{
+      "id": 3,
+      "whh": "whh"
+  }],
+  "posts": [{
       "id": 1,
       "title": "json-server",
       "author": "typicode"
@@ -20,13 +19,11 @@
       "author": "typicode"
     }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
+  "comments": [{
+    "id": 1,
+    "body": "some comment",
+    "postId": 1
+  }],
   "profile": {
     "name": "typicode"
   }

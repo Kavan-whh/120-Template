@@ -4,13 +4,13 @@ $(document).ready(function() {
     /* Act on the event */
     let self=this;
     $.ajax({
-      url: '/api/cs',
+      url: '/blog/cs',
       type: 'get',
       dataType: 'json',
       data: {id: 1}
     })
     .done(function(data) {
-      console.log(data.id);
+      console.log(data);
     });
   });
 
